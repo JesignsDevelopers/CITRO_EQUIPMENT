@@ -225,6 +225,17 @@ body {
 .Banner1 {
     padding-top: 20px;
     
+    
+}
+
+.BannerE {
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 10px white;
+}
+
+.BannerS {
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 10px white;
 }
 
 .Banner1s {
