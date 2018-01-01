@@ -3,8 +3,70 @@
 <head>
 <meta charset="utf-8">
   <title>EQUIPMENT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
  <link rel="shortcut icon" type="img/png" href="img/favicon.png">
+<style>
+.row{
+	padding-left: 1.2em;
+	text-align: center;
+}
+	.column {
+		padding-right: 2em;
+    float: left;
+    width: auto;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer;
+    width: auto;
+    height: 10em; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table-column;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+</style>
+
 </head>
 
 
@@ -20,15 +82,12 @@
    <nav>
     <ul>
        <li><a href="index.html">HOME</a></li>
-
-       <li><a href="#">PRODUCTS<img src="img/dropdown.png"> </a>
-
+       <li><a href="#">PRODUCTS <span class="glyphicon glyphicon-align-justify"></span></a>
         
         <ul class="test">
         <li><a href="equipment.html">EQUIPMENT</a></li>
         <li><a href="spares.html">SPARES</a></li>
         </ul>
-
       </li>
        <li><a href="contact.html">CONTACT</a></li>      
     </ul>
@@ -68,13 +127,60 @@
   </div>
 
 
-  <div class="Equipment-Box">
+ <!--=============================================================================-->
+ <!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img/ArticulatedTruck.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    	<h3>Articulated Trucks</h3>
+     	<p>We Have New and Used Articulated Trucks</p>
+  </div>
+  <div class="column">
+    <img src="img/ArticulatedTruck.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+  	    <h3>Asphalt Pavers</h3>
+      <p>We Have New and Used Asphalt Pavers</p>
+  </div>
+  <div class="column">
+    <img src="img/ArticulatedTruck.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+     	<h3>Asphalt Pavers</h3>
+     	<p>We Have New and Used Asphalt Pavers</p>
+  </div>
+  <div class="column">
+    <img src="img/ArticulatedTruck.jpeg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+         	<h3>Asphalt Pavers</h3>
+     	<p>We Have New and Used Asphalt Pavers</p>
+  </div>
+   <div class="column">
+    <img src="img/ArticulatedTruck.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+         	<h3>Asphalt Pavers</h3>
+     	<p>We Have New and Used Asphalt Pavers</p>
+  </div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+ <!--==============================================================================--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="Equipment-Box">
   <div class="wrapper">
    <ul>
     <li>
       <div class="Equipment-ArticulatedTruck"></div>
-      <h3>Articulated Trucks</h3>
-      <p>We Have New and Used Articulated Trucks</p>
+
     </li>
 
     <li>
@@ -214,7 +320,7 @@
 
    </ul>
    </div>   
-  </div>
+  </div>-->
    
    <br><br><br><br><br><br><br><br>
     
@@ -243,7 +349,15 @@
 </footer>
 
 
-
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
 </body>
 
 </html>
