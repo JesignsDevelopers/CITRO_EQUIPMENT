@@ -535,7 +535,7 @@ body {
 .Equipment-Box {
     width: 100%;
     padding: 12px 0px;
-    overflow: hidden;
+    overflow: none;
 
 }
 
@@ -549,13 +549,12 @@ body {
     }
 
 .Equipment-Box li {
-    width: 25%;
-    float: left;
+    width: Auto;
+    /*float: left;*/
     margin: 0px 4.1%;
     color: black;
     padding-bottom: 50px;
-    list-style: none;
-    overflow: hidden;
+    overflow: none;
     }
 
 
