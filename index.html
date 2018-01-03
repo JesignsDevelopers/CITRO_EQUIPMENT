@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+ <meta charset="utf-8">
   <title>HOME</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/ProductsStyle.css">
   <link rel="stylesheet" type="text/css" href="css/IndexStyle.css">
  <link rel="shortcut icon" type="img/png" href="img/favicon.png">
+
+ <style>
+
+</style>
 </head>
 <!--===================================all the links==============-->
 <!-- THIS IS HOW TO COMMENT IN HTML -->
@@ -19,14 +25,15 @@
      <img src="img/CELOGO.png" alt="CITROE-LOGO">   
   <nav>
     <ul>
+          <li><a href="index.html">HOME</a></li>
           <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="#">PRODUCTS <span class="glyphicon glyphicon-align-justify"></span></a>        
-            <ul class="test">
-              <!--drop Down Contetn-->
-              <li><a href="equipment.html">EQUIPMENT</a></li>
-              <li><a href="spares.html">SPARES</a></li>
-            </ul>
-          </li>      
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">PRODUCTS<span class="glyphicon glyphicon-align-justify"></button>
+             <div id="myDropdown" class="dropdown-content">
+               <a href="equipment.html">EQUIPMENT</a>
+               <a href="spares.html">SPARES</a>
+             </div>
+</div>      
     </ul>
   </nav> 
 </div>
@@ -84,18 +91,33 @@
    </nav> 
   </div>
 
-       <a href="https://www.facebook.com/JNR-Developers-359708027812899/" target="_blank">
-       <img src="img/DesignedCitro.png" class="citro-designs" alt="Facebook Link" width="260" height="80" border="0" >
-       </a>
-       </a>
-       <a href="https://www.facebook.com/JNR-Developers-359708027812899/" target="_blank">
+      <a href="https://www.facebook.com/" target="_blank">
        <img src="img/facebook-icon.png" class="facebook-icon" alt="Facebook Link" width="260" height="90" border="0" >
        </a>
 
 </footer>
 
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
 
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
-
 </html>

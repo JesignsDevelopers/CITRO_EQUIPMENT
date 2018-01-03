@@ -1,110 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+ <meta charset="utf-8">
   <title>EQUIPMENT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/ProductsStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/IndexStyle.css">
  <link rel="shortcut icon" type="img/png" href="img/favicon.png">
+
 <style>
-.row{
-	padding-left: 1.2em;
-	text-align: center;
-}
-	.column {
-		padding-right: 2em;
-    float: left;
-    width: auto;
-    padding: 10px;
-}
-
-/* Style the images inside the grid */
-.column img {
-    opacity: 0.8; 
-    cursor: pointer;
-    width: auto;
-    height: 10em; 
-}
-
-.column img:hover {
-    opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table-column;
-    clear: both;
-}
-
-/* The expanding image container */
-.container {
-    position: relative;
-    display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-}
 </style>
 
 </head>
 
-
 <!-- THIS IS HOW TO COMMENT IN HTML -->
 
-
 <body>
-
 <header>
-
    <div class="wrapper">
      <img src="img/CELOGO.png" alt="CITROE-LOGO">   
    <nav>
     <ul>
-       <li><a href="index.html">HOME</a></li>
-       <li><a href="#">PRODUCTS <span class="glyphicon glyphicon-align-justify"></span></a>
-        
-        <ul class="test">
-        <li><a href="equipment.html">EQUIPMENT</a></li>
-        <li><a href="spares.html">SPARES</a></li>
-        </ul>
-      </li>
-       <li><a href="contact.html">CONTACT</a></li>      
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">PRODUCTS<span class="glyphicon glyphicon-align-justify"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="equipment.html">EQUIPMENT</a>
+            <a href="spares.html">SPARES</a>
+          </div>
+      </div>      
     </ul>
-   </nav> 
+  </nav> 
    </div>
-
 </header>
 
-
-
 <section> 
+  <div class='space'></div>
   <div class="Banner1">
    <div class="wrapper">
-      <img src="img/bannersale.png" width="960" height="320" controls></img>
+      <img class="BannerE" src="img/bannersale.png" width="960" height="320" controls></img>
    </div>   
   </div>
-
   <div class="index-entro">
     <div class="wrapper">
        <h2>Our Equipment For Sale</h2>
@@ -121,209 +63,245 @@
        We Ship Through Out Africa And The Middle East.
        <br><br>
        For More Information On Our Products <a class="contact" href="contact.html">Contact Us!</a>
-
       </p>
     </div>
   </div>
 
 
  <!--=============================================================================-->
- <!-- The four columns -->
+
+
 <div class="row">
-  <div class="column">
+ <div class="column">
     <img src="img/ArticulatedTruck.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-    	<h3>Articulated Trucks</h3>
-     	<p>We Have New and Used Articulated Trucks</p>
-  </div>
-  <div class="column">
-    <img src="img/ArticulatedTruck.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	    <h3>Asphalt Pavers</h3>
-      <p>We Have New and Used Asphalt Pavers</p>
-  </div>
-  <div class="column">
-    <img src="img/ArticulatedTruck.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-     	<h3>Asphalt Pavers</h3>
-     	<p>We Have New and Used Asphalt Pavers</p>
-  </div>
-  <div class="column">
-    <img src="img/ArticulatedTruck.jpeg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-         	<h3>Asphalt Pavers</h3>
-     	<p>We Have New and Used Asphalt Pavers</p>
-  </div>
-   <div class="column">
-    <img src="img/ArticulatedTruck.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-         	<h3>Asphalt Pavers</h3>
-     	<p>We Have New and Used Asphalt Pavers</p>
-  </div>
+    <h3>Articulated Trucks</h3>
+    <p>We Have New and Used Articulated Trucks</p>
+ </div>
+ <div class="column">
+    <img src="img/AsphaltPavers.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+    <h3>Asphalt Pavers</h3>
+    <p>We Have New and Used Asphalt Pavers</p>
+ </div>
+ <div class="column">
+    <img src="img/BackhoeLoaders.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>Backhoe Loaders</h3>
+    <p>We Have New and Used Backhoe Loaders (TLB)</p>
+ </div>
+ <div class="column">
+    <img src="img/ColdPlaners.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <h3>Cold Planers</h3>
+    <p>We Have New and Used Cold Planers</p>
+ </div>   
+ <div class="column">
+    <img src="img/Compactors1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Roller</h3>
+    <p>We Have New and Used Smooth Drum Rollers</p>
+ </div>
+ <div class="column">
+    <img src="img/Compactors2.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Roller</h3>
+    <p>We Have New and Used Pad Foot Rollers</p>
+ </div>  
 <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
 </div>
+</div>
 
- <!--==============================================================================--> 
+<div class="row">
+ <div class="column">
+    <img src="img/Compactors3.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+    <h3>Landfill Compactors</h3>
+    <p>We Have New and Used Landfill Compactors</p>
+ </div>
+ <div class="column">
+    <img src="img/Dozer.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>BullDozers</h3>
+    <p>We Have New and Used BullDozers D3-D11T</p>
+ </div>
+ <div class="column">
+    <img src="img/Dragline.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>Draglines</h3>
+    <p>We Have New and Used Draglines</p>
+  </div>    
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
 
+<div class="row">
+ <div class="column">
+    <img src="img/Drill.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Drills</h3>
+     <p>We Have New and Used Drills</p>
+ </div>
+ <div class="column">
+    <img src="img/RopeShovels.png" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+    <h3>Rope Shovels</h3>
+    <p>We Have New and Used Rope Shovels</p>
+ </div>
+ <div class="column">
+    <img src="img/Excavators.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>Excavators</h3>
+    <p>We Have New and Used Excavators</p>
+ </div>
+ <div class="column">
+    <img src="img/FellerBunchers.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <h3>Feller Bunchers</h3>
+    <p>We Have New and Used Feller Bunchers</p>
+ </div>   
+ <div class="column">
+    <img src="img/MiningShovels.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Mining Shovels</h3>
+    <p>We Have New and Used Mining Shovels</p>
+ </div>
+ <div class="column">
+    <img src="img/MotorGraders.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Motor Graders</h3>
+    <p>We Have New and Used Motor Graders</p>
+ </div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
 
+<div class="row">
+ <div class="column">
+    <img src="img/Off-HighwayTrucks.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Off-Highway Trucks</h3>
+    <p>We Have New and Used Off-Highway Trucks</p>
+ </div>
+ <div class="column">
+    <img src="img/Pipelayers.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+    <h3>Pipelayers</h3>
+    <p>We Have New and Used Pipelayers</p>
+ </div>
+ <div class="column">
+    <img src="img/RoadReclaimers.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>Road Reclaimers</h3>
+    <p>We Have New and Used Road Reclaimers</p>
+ </div>  
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
 
+<div class="row">
+ <div class="column">
+    <img src="img/SkidSteerLoaders.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Skid Steer Loaders</h3>
+    <p>We Have New and Used Skid Steer Loaders</p>
+ </div>
+ <div class="column">
+    <img src="img/Skidders.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+    <h3>Skidders</h3>
+    <p>We Have New and Used Skidders</p>
+ </div>
+ <div class="column">
+    <img src="img/Telehandlers.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>Telehandlers</h3>
+    <p>We Have New and Used Telehandlers</p>
+ </div>
+ <div class="column">
+    <img src="img/Track Loaders.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <h3>Track Loaders</h3>
+    <p>We Have New and Used Track Loaders</p>
+ </div>   
+ <div class="column">
+    <img src="img/underground-loader.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Underground Mining</h3>
+    <p>We Have New and Used Mining Shovels Underground Mining Equipment</p>
+ </div>
+ <div class="column">
+    <img src="img/Wheel Dozers.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Wheel Dozers</h3>
+    <p>We Have New and Used Wheel Dozers</p>
+ </div>  
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
 
+<div class="row">
+ <div class="column">
+    <img src="img/Wheel Excavators.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Wheel Excavators</h3>
+    <p>We Have New and Used Wheel Excavators</p>
+ </div>
+ <div class="column">
+    <img src="img/Wheel Loaders.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+    <h3>Wheel Loaders</h3>
+    <p>We Have New and Used Wheel (Front End) Loaders</p>
+ </div>
+ <div class="column">
+    <img src="img/Wheel Tractor-Scrapers.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>Wheel Tractor-Scrapers</h3>
+    <p>We Have New and Used Wheel Tractor-Scrapers</p>
+ </div>  
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
 
+<div class="row">
+ <div class="column">
+    <img src="img/Bitumen.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Bitumen Spray Truck</h3>
+     <p>We Have New and Used Bitumen Spray Truck</p>
+ </div>
+ <div class="column">
+    <img src="img/CraneTruck.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+    <h3>Crane Trucks</h3>
+    <p>We Have Various Sizes New and Used Crane Trucks</p>
+ </div>
+ <div class="column">
+    <img src="img/FlatDeck.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>Flat Decks</h3>
+    <p>We Have Various Sizes New and Used Flat Decks</p>
+ </div>  
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
 
+<div class="row">
+ <div class="column">
+    <img src="img/Horse.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h3>Horse</h3>
+    <p>We Have New and Used Horses</p>
+ </div>
+ <div class="column">
+    <img src="img/Tipper.png" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+    <h3>Tipper Trucks</h3>
+    <p>We Have New and Used Tipper Trucks</p>
+ </div>
+ <div class="column">
+    <img src="img/Water.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <h3>Water Bowsers</h3>
+    <p>We Have New and Used Water Bowsers</p>
+  </div>  
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
 
+<div class='space'></div>
 
-
-
-
-
-
- <!-- <div class="Equipment-Box">
-  <div class="wrapper">
-   <ul>
-    <li>
-      <div class="Equipment-ArticulatedTruck"></div>
-
-    </li>
-
-    <li>
-      <div class="Equipment-AsphaltPavers"></div>
-      <h3>Asphalt Pavers</h3>
-      <p>We Have New and Used Asphalt Pavers</p>
-    </li>
-
-   <li>
-      <div class="Equipment-TLB"></div>
-      <h3>Backhoe Loaders</h3>    
-      <p>We Have New and Used Backhoe Loaders (TLB)</p>
-    </li>
-    
-    <li>
-      <div class="Equipment-ColdPlaners"></div>
-      <h3>Cold Planers</h3>
-      <p>We Have New and Used Cold Planers</p>
-    </li>
-
-    <li>
-      <div class="Equipment-Compactors1"></div>
-      <h3>Buckets</h3>
-      <p>We Supply New And Reconditioned Buckets On All Make And Models</p>
-    </li>
-
-    <li>
-      <div class="Spares-Teeth"></div>
-      <h3>Ground Engaging Tools</h3>
-      <p>We Stock A Wide Range Of G.E.T On All Makes And Models</p>
-    </li>
-
-    <li>
-      <div class="Spares-GBlade"></div>
-      <h3>Grader Blades</h3>
-      <p>We Have A Wide Range Of Blades In Stock</p>
-    </li>
-
-    <li>
-      <div class="Spares-BBlade"></div>
-      <h3>BullDozer Blades</h3>
-      <p>We Supply A Wide Range Of Replacement and Remanufactured Blades</p>
-    </li>
-
-    <li>
-      <div class="Spares-BRipper"></div>
-      <h3>BullDozer & Grader Rippers</h3>
-      <p>We Supply A Wide Range Of Replacement Rippers</p>
-    </li>
-
-    <li>
-      <div class="Spares-ExAttach"></div>
-      <h3>Excaator & TLB Attachments</h3>
-      <p>Full Range Of Attachments Available</p>
-    </li>
-
-    <li>
-      <div class="Spares-ServiceKit"></div>
-      <h3>Filters</h3>
-      <p>We Stock Original and Replacement Filters</p>
-    </li>
-    
-    <li>
-      <div class="Spares-Oils"></div>
-      <h3>Oils</h3>
-      <p>Full Range Of Lube Available</p>
-    </li>
-
-    <li>
-      <div class="Spares-HydPipes"></div>
-      <h3>Hydraulic Pipes</h3>
-      <p>Hydraulic Pipes Made To Order</p>
-    </li>
-    
-    <li>
-      <div class="Spares-TruckParts"></div>
-      <h3>Truck Parts</h3>
-      <p>We Have A Wide Range Of Truck Parts Available</p>
-    </li>
-
-    <li>
-      <div class="Spares-Trans"></div>
-      <h3>Transmissions</h3>
-      <p>We stock a wide range of replacement and remanufactured transmissions</p>
-    </li>
-
-    <li>
-      <div class="Spares-Trans-Parts"></div>
-      <h3>Transmissions Parts</h3>
-      <p>We stock full range if transmission parts
-    </p>
-    </li>
-
-    <li>
-      <div class="Spares-HydPump"></div>
-      <h3>Pumps</h3>
-      <p>We stock a wide range of new and remanufactured pumps</p>
-    </li>
-
-    <li>
-      <div class="Spares-Trans"></div>
-      <h3>Transmissions</h3>
-      <p>We stock a wide range of replacement and remanufactured transmissions</p>
-    </li>
-
-    <li>
-      <div class="Spares-Trans-Parts"></div>
-      <h3>Transmissions Parts</h3>
-      <p>We stock full range if transmission parts
-    </p>
-    </li>
-
-    <li>
-      <div class="Spares-HydPump"></div>
-      <h3>Pumps</h3>
-      <p>We stock a wide range of new and remanufactured pumps</p>
-    </li>
-
-    <li>
-      <div class="Spares-Trans"></div>
-      <h3>Transmissions</h3>
-      <p>We stock a wide range of replacement and remanufactured transmissions</p>
-    </li>
-
-    <li>
-      <div class="Spares-Trans-Parts"></div>
-      <h3>Transmissions Parts</h3>
-      <p>We stock full range if transmission parts
-    </p>
-    </li>
-
-    <li>
-      <div class="Spares-HydPump"></div>
-      <h3>Pumps</h3>
-      <p>We stock a wide range of new and remanufactured pumps</p>
-    </li>
-
-   </ul>
-   </div>   
-  </div>-->
-   
-   <br><br><br><br><br><br><br><br>
-    
 </section>
 
 <footer>
@@ -338,14 +316,10 @@
    </nav> 
   </div>
 
-       <a href="https://www.facebook.com/JNR-Developers-359708027812899/" target="_blank">
-       <img src="img/DesignedCitro.png" class="citro-designs" alt="Facebook Link" width="260" height="80" border="0" >
-       </a>
-       </a>
-       <a href="https://www.facebook.com/JNR-Developers-359708027812899/" target="_blank">
+       
+       <a href="https://www.facebook.com/" target="_blank">
        <img src="img/facebook-icon.png" class="facebook-icon" alt="Facebook Link" width="260" height="90" border="0" >
        </a>
-
 </footer>
 
 
@@ -358,6 +332,27 @@ function myFunction(imgs) {
     expandImg.parentElement.style.display = "block";
 }
 </script>
-</body>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
 </html>
