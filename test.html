@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-left: 80px;
+
+}
+
+/* Style the images inside the grid */
+.column img {
+    cursor: pointer; 
+    height: 220px;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img/ArticulatedTruck.jpeg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/AsphaltPavers.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/BackhoeLoaders.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/ColdPlaners.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+ </div>   
+ <div class="column">
+    <img src="img/Compactors1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+</div>
+ <div class="column">
+    <img src="img/Compactors2.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">  
+ </div>  
+<div class="row">
+ <div class="column">
+    <img src="img/Compactors3.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Dozer.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Dragline.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>    
+  <div class="row">
+ <div class="column">
+    <img src="img/Drill.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/RopeShovels.png" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Excavators.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/FellerBunchers.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+ </div>   
+ <div class="column">
+    <img src="img/MiningShovels.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/MotorGraders.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="row">
+ <div class="column">
+    <img src="img/Off-HighwayTrucks.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Pipelayers.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/RoadReclaimers.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+ </div>  
+ <div class="row">
+ <div class="column">
+    <img src="img/SkidSteerLoaders.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Skidders.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Telehandlers.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+ </div>
+<div class="column">
+    <img src="img/Track Loaders.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+ </div>   
+ <div class="column">
+    <img src="img/underground-loader.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Wheel Dozers.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>  
+ <div class="row">
+ <div class="column">
+    <img src="img/Wheel Excavators.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Wheel Loaders.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Wheel Tractor-Scrapers.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+   </div> 
+   <div class="row">
+ <div class="column">
+    <img src="img/Bitumen.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/CraneTruck.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/FlatDeck.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+ </div>   
+ <div class="row">
+ <div class="column">
+    <img src="img/Horse.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Tipper.png" alt="Fjords" style="width:100%" onclick="myFunction(this);">
+ </div>
+ <div class="column">
+    <img src="img/Water.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>  
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

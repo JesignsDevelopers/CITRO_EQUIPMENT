@@ -12,6 +12,10 @@
    <link rel="stylesheet" type="text/css" href="css/ProductsStyle.css">
   <link rel="stylesheet" type="text/css" href="css/IndexStyle.css">
  <link rel="shortcut icon" type="img/png" href="img/favicon.png">
+
+ <style>
+
+</style>
 </head>
 <!--===================================all the links==============-->
 <!-- THIS IS HOW TO COMMENT IN HTML -->
@@ -23,13 +27,13 @@
     <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="#">PRODUCTS <span class="glyphicon glyphicon-align-justify"></span></a>        
-            <ul class="test">
-              <!--drop Down Contetn-->
-              <li><a href="equipment.html">EQUIPMENT</a></li>
-              <li><a href="spares.html">SPARES</a></li>
-            </ul>
-          </li>      
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">PRODUCTS<span class="glyphicon glyphicon-align-justify"></button>
+             <div id="myDropdown" class="dropdown-content">
+               <a href="equipment.html">EQUIPMENT</a>
+               <a href="spares.html">SPARES</a>
+             </div>
+</div>      
     </ul>
   </nav> 
 </div>
@@ -92,5 +96,28 @@
        </a>
 
 </footer>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>

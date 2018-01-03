@@ -11,7 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" type="text/css" href="css/ProductsStyle.css">
   <link rel="stylesheet" type="text/css" href="css/IndexStyle.css">
- <link rel="shortcut icon" type="img/png" href="img/favicon.png"
+ <link rel="shortcut icon" type="img/png" href="img/favicon.png">
+
+<style>
+</style>
+
 </head>
 
 <!-- THIS IS HOW TO COMMENT IN HTML -->
@@ -24,13 +28,13 @@
     <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="#">PRODUCTS <span class="glyphicon glyphicon-align-justify"></span></a>        
-            <ul class="test">
-              <!--drop Down Contetn-->
-              <li><a href="equipment.html">EQUIPMENT</a></li>
-              <li><a href="spares.html">SPARES</a></li>
-            </ul>
-          </li>      
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">PRODUCTS<span class="glyphicon glyphicon-align-justify"></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="equipment.html">EQUIPMENT</a>
+            <a href="spares.html">SPARES</a>
+          </div>
+      </div>      
     </ul>
   </nav> 
    </div>
@@ -66,6 +70,7 @@
 
  <!--=============================================================================-->
 
+
 <div class="row">
  <div class="column">
     <img src="img/ArticulatedTruck.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
@@ -74,7 +79,7 @@
  </div>
  <div class="column">
     <img src="img/AsphaltPavers.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	<h3>Asphalt Pavers</h3>
+    <h3>Asphalt Pavers</h3>
     <p>We Have New and Used Asphalt Pavers</p>
  </div>
  <div class="column">
@@ -107,7 +112,7 @@
 <div class="row">
  <div class="column">
     <img src="img/Compactors3.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	<h3>Landfill Compactors</h3>
+    <h3>Landfill Compactors</h3>
     <p>We Have New and Used Landfill Compactors</p>
  </div>
  <div class="column">
@@ -135,7 +140,7 @@
  </div>
  <div class="column">
     <img src="img/RopeShovels.png" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	<h3>Rope Shovels</h3>
+    <h3>Rope Shovels</h3>
     <p>We Have New and Used Rope Shovels</p>
  </div>
  <div class="column">
@@ -173,7 +178,7 @@
  </div>
  <div class="column">
     <img src="img/Pipelayers.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	<h3>Pipelayers</h3>
+    <h3>Pipelayers</h3>
     <p>We Have New and Used Pipelayers</p>
  </div>
  <div class="column">
@@ -196,7 +201,7 @@
  </div>
  <div class="column">
     <img src="img/Skidders.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	<h3>Skidders</h3>
+    <h3>Skidders</h3>
     <p>We Have New and Used Skidders</p>
  </div>
  <div class="column">
@@ -234,7 +239,7 @@
  </div>
  <div class="column">
     <img src="img/Wheel Loaders.jpg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	<h3>Wheel Loaders</h3>
+    <h3>Wheel Loaders</h3>
     <p>We Have New and Used Wheel (Front End) Loaders</p>
  </div>
  <div class="column">
@@ -257,7 +262,7 @@
  </div>
  <div class="column">
     <img src="img/CraneTruck.jpeg" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	<h3>Crane Trucks</h3>
+    <h3>Crane Trucks</h3>
     <p>We Have Various Sizes New and Used Crane Trucks</p>
  </div>
  <div class="column">
@@ -280,7 +285,7 @@
  </div>
  <div class="column">
     <img src="img/Tipper.png" alt="Fjords" style="width:100%" onclick="myFunction(this);">
-  	<h3>Tipper Trucks</h3>
+    <h3>Tipper Trucks</h3>
     <p>We Have New and Used Tipper Trucks</p>
  </div>
  <div class="column">
@@ -294,8 +299,8 @@
   <div id="imgtext"></div>
 </div>
 </div>
- <!--==============================================================================--> 
 
+<div class='space'></div>
 
 </section>
 
@@ -325,6 +330,28 @@ function myFunction(imgs) {
     expandImg.src = imgs.src;
     imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
+}
+</script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 </script>
 </body>

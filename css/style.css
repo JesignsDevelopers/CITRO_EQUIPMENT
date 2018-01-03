@@ -166,49 +166,48 @@ header nav ul li a {
       
 }
 
-header nav ul li img {
-    float: right;
-    width: 8px;
-    padding-left: 6px;
-    position: relative;
-    top: 5px;
+
+/* -------------------  DROP DOWN------------------- */
+
+.dropbtn {
+    background-color: #000099;
+    padding: 16px;
+    font-family: arial;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
-header nav ul li ul {
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #4b4b4b;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
-    padding: 8px;
-    background-color: #0000ff;
-    border-radius: 0px 0px 2px 4px;
-
+    background-color: #cccccc;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-header nav ul li:hover ul {
-    display: block;
-    opacity: .9;
-    height: 90px;
-    width: 160px;
-    
-}
-
-header nav ul li ul li {
-    clear: both;
-    width: 140px;
-    border-radius: 4px;
-
-}
-
-header nav ul li ul li a {
-    display: block;
-    padding: 14px 12px;
-    font-family: tk;
-    color: #fff;
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
     text-decoration: none;
+    display: block;
 }
 
-header  nav ul li ul li:hover {
-    background-color: black;
-}
+.dropdown a:hover {background-color: #4b4b4b}
+
+.show {display:block;}
 
 
 .contact {
@@ -543,270 +542,6 @@ body {
 
 /*------- EQUIPMENT PAGE -------*/
 
-.Equipment-Box {
-    width: 100%;
-    padding: 12px 0px;
-    overflow: none;
-
-}
-
-.Equipment-Box article {
-    width: 25%;
-    float: left;
-    margin: 0px 4.1%;
-    color: black;
-    padding-bottom: 50px;
-    background-color: none;
-    }
-
-.Equipment-Box li {
-    width: Auto;
-    /*float: left;*/
-    margin: 0px 4.1%;
-    color: black;
-    padding-bottom: 50px;
-    overflow: none;
-    }
-
-
-.Equipment-Box h3 {
-    font-weight: 400px;
-    font-size: 18px;
-    text-align: center;
-    padding-bottom: 8x;
-    padding-top: 8px;
-    text-transform: capitalize;
-    color: black;
-    overflow: hidden;
-
-}
-
-.Equipment-Box p {
-    font-weight: 400px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    padding-bottom: 10px;
-    color: black;
-    overflow: hidden;
-
-}
-
-
-.Equipment-ArticulatedTruck {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/ArticulatedTruck.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-} 
-
-.Equipment-AsphaltPavers {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/AsphaltPavers.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-  
-} 
-
-.Equipment-TLB {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/BackhoeLoaders.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-  
-} 
-
-.Equipment-ColdPlaners {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/ColdPlaners.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-
-}
-
-.Equipment-Compactors1 {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/Compactors1.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-Teeth {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatTeeth.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-GBlade {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/graderblade.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-BBlade {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/BBlade.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-BRipper {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/BRipper.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-ExAttach {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/ExAttachment.png);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-BobCatAttach {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/BobCatAttach.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-} 
-
-.Spares-hydc {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/hydc.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}  
-
-.Spares-turbo {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/turbo.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-boom {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/booms.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-
-.Spares-ServiceKit {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/ServiceKit.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-
-.Spares-Oils {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/Oils.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}  
-
-.Spares-HydPipes {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatHydPipes.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-} 
-
-.Spares-TruckParts {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/TruckParts.png);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}  
-
-
-.Spare-Box h3 {
-    font-weight: 400px;
-    font-size: 18px;
-    text-align: center;
-    padding-bottom: 8x;
-    padding-top: 8px;
-    text-transform: capitalize;
-    color: black;
-    overflow: hidden;
-
-}
-
-.Spare-Box p {
-    font-weight: 400px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    padding-bottom: 10px;
-    color: black;
-    overflow: hidden;
-
-}
-
-.Spare-Box2 h3{
-    font-weight: 400px;
-    font-size: 18px;
-    text-align: center;
-    padding-bottom: 8x;
-    padding-top: 8px;
-    text-transform: capitalize;
-    color: black;
-    overflow: hidden;
-
-}
-
-.Spare-Box2 p {
-    font-weight: 400px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    padding-bottom: 10px;
-    text-transform: capitalize;
-    color: black;
-    overflow: hidden;
-
-}
-
-
-
-
 
 /*-------- CONTACT PAGE -------*/
 
@@ -883,42 +618,6 @@ body {
 
 } 
 
-
-/*--------- GALLERY PAGE ------*/
-
-
-.gallery-box {
-    overflow: hidden;
-    padding: 80px 0px;
-}
-
-.img-single {
-    width: 310px;
-    height: 150px;
-    float: left;
-    position: relative;
-    margin: 5px 5px;
-
-} 
-
-.img-single img {
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0px;
-right: 0px;
-bottom: 0px;
-left: 0px;
-transition: all 200ms ease-in-out;
--webkit-transition: all 200ms ease-in-out;
--o-transition: all 200ms ease-in-out;
-}
-
-
-
-
-
-
 /*-----------FOOTER------------*/
 
 
@@ -953,12 +652,6 @@ footer {
 
 .facebook-icon {
     float: right;
+    margin-top: -40px;
     
-}
-
-.citro-designs {
-    float: right;
-    padding-right: 7px;
-    border-radius: 20px;
-
 }
