@@ -129,7 +129,7 @@ a {
 
 header {
     width: 100%;
-    height: 170px;
+    height: 180px;
     background-color: #000099;
     
 }
@@ -212,8 +212,6 @@ header nav ul li a {
 
 .contact {
     color: black;
-    background-color: #14e715;
-    border-radius: 20px;
 }
 
 body {
@@ -222,8 +220,7 @@ body {
 }
 
 .Banner1 {
-    padding-top: 20px;
-    
+    padding-top: 20px;    
     
 }
 
@@ -240,6 +237,19 @@ body {
 .Banner1s {
   border: 2px solid #fff;
   box-shadow: 10px 10px 10px white;
+}
+
+.BannerCU{
+    padding-top: 20px;   
+    margin-left: 30em;
+    
+    
+}
+
+.BannerCU1 {
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 10px white;
+  border-radius: 20px; 
 }
 
 .index-entro {
@@ -272,273 +282,7 @@ body {
     border-radius: 23px;
 }
 
- .Spare-Box {
-    width: 100%;
-    padding: 0px 0px;
-    overflow: hidden;
-
-}
-
-.Spare-Box2{
-    width: 100%;
-    padding: 80px 0px;
-    overflow: hidden;
-    padding-left: 140px;
-
-}
-
-.Spare-Box article {
-    width: 25%;
-    float: left;
-    margin: 0px 4.1%;
-    color: black;
-    }
-
-.Spare-Box2 article {
-    width: 25%;
-    float: left;
-    margin: 0px 4.1%;
-    }
-
-
-.Spares-Engine {
-   width: 100%;
-   height: 140PX;
-   background-image: url(../img/CatEngine.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   border: 2px solid white;
-
-} 
-
-.Engine-Parts {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatEngineParts.jpeg);
-    border-radius: 20px;
-   background-size: 240px 140px;
-   
-} 
-
-.Spares-Trans {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatTrans.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-
-} 
-
-.Spares-Trans-Parts {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatTransParts.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-} 
-
-.Spares-HydPump {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatHydPump.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-  
-} 
-
-.Spares-FDrive {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatFinalDrive.jpeg);
-   border-radius: 20px;
-   background-size: 220px 140px;
-  
-} 
-
-.Spares-Tracks {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatTrack.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-
-}
-
-.Spares-Bucket {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatBucket.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-Teeth {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatTeeth.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-GBlade {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/graderblade.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-BBlade {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/BBlade.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-BRipper {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/BRipper.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-ExAttach {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/ExAttachment.png);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-BobCatAttach {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/BobCatAttach.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-} 
-
-.Spares-hydc {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/hydc.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}  
-
-.Spares-turbo {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/turbo.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-.Spares-boom {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/booms.jpg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-
-.Spares-ServiceKit {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/ServiceKit.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}
-
-
-.Spares-Oils {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/Oils.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}  
-
-.Spares-HydPipes {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/CatHydPipes.jpeg);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-} 
-
-.Spares-TruckParts {
-   width: 100%;
-   height: 140px;
-   background-image: url(../img/TruckParts.png);
-   border-radius: 20px;
-   background-size: 240px 140px;
-   
-}  
-
-
-.Spare-Box h3 {
-    font-weight: 400px;
-    font-size: 18px;
-    text-align: center;
-    padding-bottom: 8x;
-    padding-top: 8px;
-    text-transform: capitalize;
-    color: black;
-    overflow: hidden;
-
-}
-
-.Spare-Box p {
-    font-weight: 400px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    padding-bottom: 10px;
-    color: black;
-    overflow: hidden;
-
-}
-
-.Spare-Box2 h3{
-    font-weight: 400px;
-    font-size: 18px;
-    text-align: center;
-    padding-bottom: 8x;
-    padding-top: 8px;
-    text-transform: capitalize;
-    color: black;
-    overflow: hidden;
-
-}
-
-.Spare-Box2 p {
-    font-weight: 400px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    padding-bottom: 10px;
-    text-transform: capitalize;
-    color: black;
-    overflow: hidden;
-
-}
+ 
 
 /*------- EQUIPMENT PAGE -------*/
 
@@ -546,8 +290,8 @@ body {
 /*-------- CONTACT PAGE -------*/
 
 .contact-info {
-    font-size: 30px
-   
+    font-size: 30px;
+    margin-left: 15em;
 
 }
 
@@ -558,14 +302,18 @@ body {
 }
 
 
-.contact-info p {
+.c1 {
+   padding-left: 1.6em;
+
+}
+.c2{
    color: black;
+   padding-left: .7em;
 
 }
 
-.whatsapp {
-    width: 100px;
-    height: 100px;
+.c3 {
+    padding-left: 2.8em;
 
 }
 
